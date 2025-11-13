@@ -824,6 +824,7 @@ p {
   --card-tilt-y: 0deg;
   --card-translate: 0px;
   --card-scale: 1;
+  --card-reveal-offset: 0px;
   background: linear-gradient(135deg, rgba(18, 18, 25, 0.9) 0%, rgba(12, 12, 18, 0.95) 100%);
   padding: 40px;
   border-radius: 20px;
@@ -840,7 +841,7 @@ p {
   transform: perspective(1200px)
              rotateX(var(--card-tilt-x))
              rotateY(var(--card-tilt-y))
-             translateY(var(--card-translate))
+             translateY(calc(var(--card-translate) + var(--card-reveal-offset)))
              scale(var(--card-scale));
   will-change: transform;
 }
@@ -1497,20 +1498,29 @@ p {
   }
 }
 
-/* ======================= ANIMATIONS ======================= */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* ======================= SCROLL REVEAL ======================= */
+.scroll-reveal {
+  opacity: 0;
 }
 
-.fade-in {
-  animation: fadeInUp 0.6s ease-out forwards;
+.scroll-reveal:not(.card) {
+  transform: translateY(30px);
+}
+
+.card.scroll-reveal {
+  --card-reveal-offset: 30px;
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+}
+
+.scroll-reveal.is-visible:not(.card) {
+  transform: translateY(0);
+}
+
+.card.scroll-reveal.is-visible {
+  --card-reveal-offset: 0px;
 }
 
 /* ======================= SCROLL TO TOP BUTTON ======================= */

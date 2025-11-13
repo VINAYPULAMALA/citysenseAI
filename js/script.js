@@ -133,7 +133,7 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('fade-in');
+      entry.target.classList.add('is-visible');
       observer.unobserve(entry.target);
     }
   });
@@ -144,17 +144,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const cards = document.querySelectorAll('.card');
   const processCards = document.querySelectorAll('.process-card');
   const roadmapCards = document.querySelectorAll('.roadmap-card');
+  const revealTargets = [...new Set([
+    ...cards,
+    ...processCards,
+    ...roadmapCards
+  ])];
 
-  cards.forEach(card => {
-    observer.observe(card);
-  });
+  if (prefersReducedMotion.matches) {
+    return;
+  }
 
-  processCards.forEach(card => {
-    observer.observe(card);
-  });
-
-  roadmapCards.forEach(card => {
-    observer.observe(card);
+  revealTargets.forEach(target => {
+    target.classList.add('scroll-reveal');
+    observer.observe(target);
   });
 });
 
