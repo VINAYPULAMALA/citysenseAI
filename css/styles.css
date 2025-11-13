@@ -820,6 +820,10 @@ p {
 
 /* ======================= CARDS ======================= */
 .card {
+  --card-tilt-x: 0deg;
+  --card-tilt-y: 0deg;
+  --card-translate: 0px;
+  --card-scale: 1;
   background: linear-gradient(135deg, rgba(18, 18, 25, 0.9) 0%, rgba(12, 12, 18, 0.95) 100%);
   padding: 40px;
   border-radius: 20px;
@@ -833,6 +837,12 @@ p {
               0 0 0 1px rgba(38, 215, 255, 0.1),
               inset 0 1px 0 rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(15px);
+  transform: perspective(1200px)
+             rotateX(var(--card-tilt-x))
+             rotateY(var(--card-tilt-y))
+             translateY(var(--card-translate))
+             scale(var(--card-scale));
+  will-change: transform;
 }
 
 .card::before {
@@ -868,8 +878,9 @@ p {
 }
 
 .card:hover {
+  --card-translate: -12px;
+  --card-scale: 1.02;
   border-color: rgba(38, 215, 255, 0.7);
-  transform: translateY(-12px) scale(1.02);
   box-shadow: 0 25px 60px rgba(38, 215, 255, 0.4),
               0 0 0 2px rgba(38, 215, 255, 0.4),
               0 0 40px rgba(38, 215, 255, 0.2),

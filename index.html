@@ -4,31 +4,45 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>CitySense AI - Urban Intelligence Platform</title>
+<meta name="description" content="CitySense AI transforms everyday vehicle movement into live road-condition, fleet, and environmental intelligence for modern cities." />
+<meta name="keywords" content="road damage detection, mobility intelligence, smart city, fleet analytics, pothole detection" />
+<link rel="canonical" href="https://citysense.ai/" />
+<meta property="og:title" content="CitySense AI – Urban Intelligence Platform" />
+<meta property="og:description" content="Detect potholes, understand fleet behavior, and monitor citywide mobility with a single AI platform." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://citysense.ai/" />
+<meta property="og:image" content="../tech.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="CitySense AI – Urban Intelligence Platform" />
+<meta name="twitter:description" content="Automatically surface actionable road, fleet, and environmental insights for every street." />
+<meta name="twitter:image" content="../tech.png" />
 <link rel="icon" type="image/png" href="../Chattyu.png" />
 <link rel="stylesheet" href="css/styles.css" />
 <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <!-- ======================= NAVIGATION ======================= -->
-<nav class="navbar">
+<nav class="navbar" aria-label="Primary">
   <div class="nav-container">
     <div class="nav-brand">
       <img src="../Chattyu.png" alt="CitySense AI Logo" class="nav-logo">
       <span>CitySense AI</span>
     </div>
-    <div class="nav-links">
+    <div class="nav-links" id="primary-navigation">
       <a href="#detect">Features</a>
       <a href="#future">Roadmap</a>
       <a href="#contact">Investors</a>
       <a href="#pilot">Careers</a>
     </div>
-    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+    <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">
       <i data-lucide="menu"></i>
     </button>
   </div>
 </nav>
 
+<main id="main" tabindex="-1">
 <!-- ======================= HERO ======================= -->
 <section class="hero">
   <div class="hero-content">
@@ -61,31 +75,132 @@
 
 <!-- ======================= FUNDRAISING SECTION ======================= -->
 <section class="fundraising-section">
-  <div class="fundraising-banner">
-    <div class="fundraising-content">
-      <div class="fundraising-status">
-        <span class="status-dot"></span>
-        <span>Open for Investment</span>
+  <div class="fundraising-container">
+
+    <!-- Left Side: Main Content -->
+    <div class="fundraising-main">
+      <div class="fundraising-header">
+        <div class="fundraising-status">
+          <span class="status-dot"></span>
+          <span>Actively Raising</span>
+        </div>
+        <div class="fundraising-badge">Seed Round</div>
       </div>
-      <h2>Seed Funding Round</h2>
-      <p class="fundraising-description">
-        We're raising seed capital to scale <strong>CitySense AI</strong> — transforming daily vehicle movement
-        into actionable urban intelligence for smarter, safer cities across India.
+
+      <h2 class="fundraising-title">Join Our Journey</h2>
+      <div class="fundraising-amount-large">$25,000</div>
+      <p class="fundraising-subtitle">Seed Capital to Scale Urban Intelligence</p>
+
+      <p class="fundraising-pitch">
+        We're transforming how cities understand their infrastructure. By analyzing natural vehicle movement,
+        <strong>CitySense AI</strong> provides real-time insights on road conditions, public transport,
+        environmental quality, and urban mobility patterns — without requiring new infrastructure.
       </p>
-      <div class="fundraising-use">
-        <h3>Use of Funds</h3>
-        <ul>
-          <li><i data-lucide="cpu"></i> Product development & AI model refinement</li>
-          <li><i data-lucide="users"></i> Team expansion (ML, Hardware, Full-stack)</li>
-          <li><i data-lucide="map-pin"></i> Pilot deployments in target cities</li>
-          <li><i data-lucide="megaphone"></i> Market outreach & partnerships</li>
-        </ul>
+
+      <div class="fundraising-metrics">
+        <div class="metric-item">
+          <div class="metric-icon icon-purple">
+            <i data-lucide="target"></i>
+          </div>
+          <div class="metric-content">
+            <div class="metric-value">5+ Cities</div>
+            <div class="metric-label">Target Market</div>
+          </div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-icon icon-green">
+            <i data-lucide="trending-up"></i>
+          </div>
+          <div class="metric-content">
+            <div class="metric-value">$2M+</div>
+            <div class="metric-label">Addressable Market</div>
+          </div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-icon icon-blue">
+            <i data-lucide="zap"></i>
+          </div>
+          <div class="metric-content">
+            <div class="metric-value">Early Stage</div>
+            <div class="metric-label">High Growth Potential</div>
+          </div>
+        </div>
       </div>
+
       <a class="btn btn-primary fundraising-cta" href="#contact">
-        <i data-lucide="handshake"></i>
-        <span>Connect with Us</span>
+        <i data-lucide="rocket"></i>
+        <span>Become an Investor</span>
       </a>
     </div>
+
+    <!-- Right Side: Use of Funds -->
+    <div class="fundraising-sidebar">
+      <div class="funds-card">
+        <h3>
+          <i data-lucide="pie-chart"></i>
+          Allocation Plan
+        </h3>
+        <div class="funds-list">
+          <div class="fund-item">
+            <div class="fund-header">
+              <div class="fund-icon">
+                <i data-lucide="cpu"></i>
+              </div>
+              <span class="fund-title">Product & AI</span>
+            </div>
+            <div class="fund-bar">
+              <div class="fund-progress" style="width: 40%;"></div>
+            </div>
+            <span class="fund-percentage">40%</span>
+          </div>
+
+          <div class="fund-item">
+            <div class="fund-header">
+              <div class="fund-icon">
+                <i data-lucide="users"></i>
+              </div>
+              <span class="fund-title">Team Growth</span>
+            </div>
+            <div class="fund-bar">
+              <div class="fund-progress" style="width: 30%;"></div>
+            </div>
+            <span class="fund-percentage">30%</span>
+          </div>
+
+          <div class="fund-item">
+            <div class="fund-header">
+              <div class="fund-icon">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <span class="fund-title">Pilot Programs</span>
+            </div>
+            <div class="fund-bar">
+              <div class="fund-progress" style="width: 20%;"></div>
+            </div>
+            <span class="fund-percentage">20%</span>
+          </div>
+
+          <div class="fund-item">
+            <div class="fund-header">
+              <div class="fund-icon">
+                <i data-lucide="megaphone"></i>
+              </div>
+              <span class="fund-title">Market Outreach</span>
+            </div>
+            <div class="fund-bar">
+              <div class="fund-progress" style="width: 10%;"></div>
+            </div>
+            <span class="fund-percentage">10%</span>
+          </div>
+        </div>
+
+        <div class="funds-note">
+          <i data-lucide="info"></i>
+          <span>Focused on rapid deployment and market validation</span>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -310,37 +425,79 @@
 </section>
 
 <!-- ======================= INVESTOR SECTION ======================= -->
-<section id="contact" class="investor-section">
+<section id="contact" class="investor-section contact-section">
   <div class="section-header">
-    <h2>For Investors</h2>
+    <h2>Partner With Us</h2>
+    <p>Connect with our team for investment, pilot deployments, or strategic partnerships.</p>
   </div>
 
-  <div class="investor-card">
-    <div class="investor-header">
-      <div class="card-icon icon-green" style="width: 60px; height: 60px; margin-bottom: 0;">
-        <i data-lucide="trending-up" style="width: 35px; height: 35px;"></i>
+  <div class="contact-grid">
+    <div class="investor-card">
+      <div class="investor-header">
+        <div class="card-icon icon-green" style="width: 60px; height: 60px; margin-bottom: 0;">
+          <i data-lucide="trending-up" style="width: 35px; height: 35px;"></i>
+        </div>
+        <h3>Why We Win</h3>
       </div>
-      <h3>Why We Win</h3>
-    </div>
-    <p>
-      Our model turns everyday movement into a real-time intelligence network — no new infrastructure needed.
-    </p>
-    <p style="margin-top:10px; font-weight: bold; color: #26d7ff;">
-      Revenue streams include:
-    </p>
-    <ul class="revenue-list">
-      <li><i data-lucide="circle-dollar-sign"></i> Subscription per km scanned</li>
-      <li><i data-lucide="landmark"></i> Government dashboards</li>
-      <li><i data-lucide="users-round"></i> Fleet driving behavior analysis</li>
-      <li><i data-lucide="sprout"></i> Environmental intelligence</li>
-      <li><i data-lucide="network"></i> Data APIs for third-party partners</li>
-      <li><i data-lucide="layers"></i> Digital twin licensing</li>
-    </ul>
+      <p>
+        Our model turns everyday movement into a real-time intelligence network — no new infrastructure needed.
+      </p>
+      <p style="margin-top:10px; font-weight: bold; color: #26d7ff;">
+        Revenue streams include:
+      </p>
+      <ul class="revenue-list">
+        <li><i data-lucide="circle-dollar-sign"></i> Subscription per km scanned</li>
+        <li><i data-lucide="landmark"></i> Government dashboards</li>
+        <li><i data-lucide="users-round"></i> Fleet driving behavior analysis</li>
+        <li><i data-lucide="sprout"></i> Environmental intelligence</li>
+        <li><i data-lucide="network"></i> Data APIs for third-party partners</li>
+        <li><i data-lucide="layers"></i> Digital twin licensing</li>
+      </ul>
 
-    <a class="btn btn-primary" style="margin-top:20px;" href="#contact">
-      <i data-lucide="mail"></i>
-      <span>Request Investor Deck</span>
-    </a>
+      <a class="btn btn-primary" style="margin-top:20px;" href="mailto:invest@citysense.ai?subject=Investor%20Deck%20Request">
+        <i data-lucide="mail"></i>
+        <span>Request Investor Deck</span>
+      </a>
+    </div>
+
+    <div class="contact-card">
+      <h3>Start a Conversation</h3>
+      <p>Tell us a little about your interest and we’ll reply within one business day.</p>
+      <form id="contact-form">
+        <div class="input-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="name" autocomplete="name" required>
+        </div>
+        <div class="input-grid">
+          <div class="input-group">
+            <label for="company">Organization</label>
+            <input type="text" id="company" name="company" autocomplete="organization">
+          </div>
+          <div class="input-group">
+            <label for="email">Work Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="interest">I'm interested in</label>
+          <select id="interest" name="interest">
+            <option value="investment">Investment Opportunity</option>
+            <option value="pilot">City Pilot Deployment</option>
+            <option value="partnership">Strategic Partnership</option>
+            <option value="careers">Careers</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">
+          <i data-lucide="send"></i>
+          <span>Send Message</span>
+        </button>
+      </form>
+      <p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
+    </div>
   </div>
 </section>
 
@@ -391,6 +548,7 @@
 </section>
 
 <!-- ======================= FOOTER ======================= -->
+</main>
 <footer class="footer">
   <div class="footer-content">
     <div class="footer-section">
@@ -415,10 +573,10 @@
     <div class="footer-section">
       <h4>Connect</h4>
       <div class="social-links">
-        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
-        <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
-        <a href="#" aria-label="Mail"><i data-lucide="mail"></i></a>
+        <a href="https://www.linkedin.com/company/citysense-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="https://twitter.com/CitySenseAI" target="_blank" rel="noopener" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+        <a href="https://github.com/CitySenseAI" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+        <a href="mailto:hello@citysense.ai" aria-label="Mail"><i data-lucide="mail"></i></a>
       </div>
     </div>
   </div>
